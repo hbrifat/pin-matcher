@@ -1,5 +1,5 @@
-document.getElementById("success").style.display = "none";
-document.getElementById("failed").style.display = "none";
+  document.getElementById("success").style.display = "none";
+  document.getElementById("failed").style.display = "none";
 
 const pinButton = document.getElementById("pinButton").addEventListener("click", function(){
   document.getElementById("generatePinDisplay").value = Math.round(Math.random() * 10000 );
@@ -9,9 +9,10 @@ const pinButton = document.getElementById("pinButton").addEventListener("click",
 
 })
 
-document.getElementById("one").addEventListener("click", function(){
-   document.getElementById("inputPinDisplay").value += '1';
-})
+document.getElementById("one").addEventListener("click", callInput)
+function callInput(){
+  document.getElementById("inputPinDisplay").value += '1';
+}
 document.getElementById("two").addEventListener("click", function(){
    document.getElementById("inputPinDisplay").value += '2';
 })
